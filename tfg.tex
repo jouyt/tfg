@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article} % Artículo porque a la hora de poner los títulos los enumera con 1., 2.,... sin embargo el report te los enumera así: 0.1., 0.2.,...
+\documentclass[a4paper,11pt]{article} % Artículo porque a la hora de poner los títulos los enumera con 1., 2.,... sin embargo el report te los enumera así: 0.1., 0.2.,...
 \usepackage[utf8x]{inputenc} % Esto hace que latex interprete la codificación del documento como utf-8 sin dar errores en las tildes
 \usepackage[spanish]{babel} % Para poner el idioma en castellano(fecha,Índice...)
 \usepackage{color} % Para poder poner las letras en color si es necesario
@@ -6,6 +6,11 @@
 \renewcommand{\appendixname}{Anexos} %Para cambiar de nombre los appendices por anexos
 \renewcommand{\appendixtocname}{Anexos} %Para cambiar de nombre los appendices por anexos
 \renewcommand{\appendixpagename}{Anexos} %Para cambiar de nombre los appendices por anexos
+\usepackage{setspace} % Estas dos líneas (esta y la de abajo)ponen interlineado 1,5 excepto en notas a pie de página e igual algo más (que no sé)
+\onehalfspacing
+\usepackage[top=2.5cm, left=4cm, bottom=2.5cm, right=3cm]{geometry} % Para los márgenes
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document} % Siempre hay que ponerlo
 \title{Anatomía de superficie: su representación pictórica en el Ecce Homo}
