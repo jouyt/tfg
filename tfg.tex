@@ -22,6 +22,7 @@
 \renewcommand{\appendixpagename}{Anexos} %Para cambiar de nombre los appendices por anexos
 
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=red, linktoc=page]{hyperref} % Para poner links
+\usepackage{float}
 % Solución para colisiones entre hyperref y appendix
 \usepackage{etoolbox} 
 \makeatletter
@@ -60,6 +61,7 @@
 \include{bibliography}
 \newpage
 \begin{appendices}
+\let\clearpage\relax
 %\include{surface}
 \include{vesalio}
 \include{anexos}
