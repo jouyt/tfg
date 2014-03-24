@@ -12,6 +12,7 @@
 %\renewcommand{\familydefault}{\sfdefault}
 %\usepackage{uarial}
 %\renewcommand{\familydefault}{\sfdefault}
+\usepackage[nottoc,numbib]{tocbibind}
 
 \usepackage[top=2.5cm, left=4cm, bottom=2.5cm, right=3cm]{geometry} % Para los márgenes
 
@@ -20,6 +21,7 @@
 \renewcommand{\appendixname}{Anexos} %Para cambiar de nombre los appendices por anexos
 \renewcommand{\appendixtocname}{Anexos} %Para cambiar de nombre los appendices por anexos
 \renewcommand{\appendixpagename}{Anexos} %Para cambiar de nombre los appendices por anexos
+\newcommand*{\Appendixautorefname}{}
 
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=red, linktoc=page]{hyperref} % Para poner links
 \usepackage{float}
@@ -31,7 +33,7 @@
 % % % % % % % % % % % % % % % % % % % % % % %
 
 \begin{document} % Siempre hay que ponerlo
-\title{Anatomía de superficie: su representación pictórica en el Ecce Homo}
+\title{Anatomía de superficie: su representación pictórica en la muerte de Cristo}
 \author{Nerea González Cordero}
 \date{\today}
 \maketitle % Para crear la portada
@@ -46,7 +48,6 @@
 
 \include{abstract}
 \include{intro}
-%\include{propor}
 \include{objectives}
 \include{methodology}
 \newpage
@@ -54,17 +55,15 @@
 \include{mantegna}
 \include{greco}
 \include{velazquez}
-%\include{gauguin}
 \include{dali}
 \include{results-and-discussion}
 \include{conclu}
-%\include{bibliography}
-\newpage
+
 \nocite{*} % Show all Bib-entries
 \bibliographystyle{vancouver}
 \bibliography{bibliography}
 
-\newpage
+\clearpage
 \begin{appendices}
 \let\clearpage\relax
 \input{anexos}
