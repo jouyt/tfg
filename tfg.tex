@@ -25,6 +25,13 @@
 
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=red, linktoc=page]{hyperref} % Para poner links
 \usepackage{float}
+
+% Páginas abajo a la derecha
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\rfoot{\thepage}
+
 % Solución para colisiones entre hyperref y appendix
 \usepackage{etoolbox} 
 \makeatletter
@@ -33,20 +40,21 @@
 % % % % % % % % % % % % % % % % % % % % % % %
 
 \begin{document} % Siempre hay que ponerlo
+\pagestyle{empty}
+
 \title{Anatomía de superficie: su representación pictórica en la muerte de Cristo}
 \author{Nerea González Cordero}
 \date{\today}
 \maketitle % Para crear la portada
-\thispagestyle{empty} % Para que no ponga número en la página
 \newpage % Para salto de página
 
-\pagestyle{empty}
+\include{abstract}
 \tableofcontents % Para el Índice
 \newpage
-\pagestyle{plain}
+
+\pagestyle{fancy} % Empezar a numerar
 \pagenumbering{arabic} % La numeración de las páginas, también se puede con números romanos {roman}
 
-\include{abstract}
 \include{intro}
 \include{objectives}
 \include{methodology}
