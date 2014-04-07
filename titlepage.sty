@@ -1,0 +1,41 @@
+\renewcommand\maketitle{
+  \begin{titlepage}
+  \begin{figure}[H]
+    \hspace*{-4.5em}
+    \includegraphics[width=0.40\linewidth]{logo-ehu.jpg}
+%   \vspace*{-3cm}
+    %\includegraphics[width=0.40\textwidth]{logo-escuela.jpg}
+    \hfill
+    \includegraphics[width=0.40\linewidth]{logo-escuela.jpg}
+    \hspace*{-1.5em}
+  \end{figure}
+
+  \vskip 15em
+  \begin{center}
+  \begin{Huge}
+  TRABAJO FIN DE GRADO
+  \vskip 2em
+  Anatomía de superficie: su representación píctorica y escultórica en la muerte de Cristo
+  \end{Huge}
+  \vskip 15em
+  \begin{Large}
+  \@author
+  \vskip 0.75em
+  Leioa, \today
+  \end{Large}
+  \end{center}
+  \vfill
+  \hspace*{-3.5em}\parbox{12em}{Creative Commons\hfill\ccLogo\\Attribution\hfill\ccAttribution\\Share Alike\hfill\ccShareAlike}
+  
+  \end{titlepage}
+  \setcounter{footnote}{0}%
+  \global\let\maketitle\relax
+  \global\let\@author\@empty
+  \global\let\@subtitle\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\author\relax
+  \global\let\date\relax
+  \global\let\and\relax
+}

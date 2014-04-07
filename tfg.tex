@@ -32,7 +32,7 @@
 \renewcommand{\headrulewidth}{0pt} % remove the header rule
 \rfoot{\thepage}
 
-\usepackage[export]{adjustbox}
+%\usepackage[]{adjustbox}
 
 % Solución para colisiones entre hyperref y appendix
 \usepackage{etoolbox} 
@@ -40,37 +40,14 @@
 \appto{\appendices}{\def\Hy@chapapp{Appendix}}
 \makeatother
 % % % % % % % % % % % % % % % % % % % % % % %
-
+\usepackage{ccicons}
+\usepackage{titlepage}
 \begin{document} % Siempre hay que ponerlo
 \pagestyle{empty}
-\begin{titlepage}
-\begin{figure}[ht!]
-	\includegraphics[width=0.40\textwidth]{logo-ehu.jpg}
-\end{figure}
-\begin{figure}[ht!]
-\vspace*{-3cm}
-	%\includegraphics[width=0.40\textwidth]{logo-escuela.jpg}
-	\includegraphics[width=0.40\textwidth,right=\linewidth]{logo-escuela.jpg}
-\end{figure}
-\vskip 15em
-\begin{center}
-\begin{Huge}
-TRABAJO FIN DE GRADO
-\vskip 2em
-Anatomía de superficie: su representación píctorica y escultórica en la muerte de Cristo
-\end{Huge}
-\vskip 15em
-\begin{Large}
-Nerea González Cordero
-\vskip 0.75em
-Leioa, \today
-\end{Large}
-\end{center}\par
-\end{titlepage}
-%\title{Anatomía de superficie: su representación pictórica en la muerte de Cristo}
-%\author{Nerea González Cordero}
-%\date{\today}
-%\maketitle % Para crear la portada
+\title{Anatomía de superficie: su representación pictórica en la muerte de Cristo}
+\author{Nerea González Cordero}
+\date{\today}
+\maketitle % Para crear la portada
 \newpage % Para salto de página
 
 \include{abstract}
