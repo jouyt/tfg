@@ -1,0 +1,8 @@
+install:
+  - sudo apt-get update
+  - sudo apt-get install texlive-fonts-extra texlive-latex-base texlive-binaries
+script:
+  - pdflatex tfg.tex
+  - bibtex tfg.aux
+  - pdflatex tfg.tex
+  - pdflatex tfg.tex
