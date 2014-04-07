@@ -1,6 +1,8 @@
-install:
+before_install:
+  - sudo add-apt-repository -y ppa:texlive-backports/ppa
   - sudo apt-get update
-  - sudo apt-get install texlive-full
+install:
+  - sudo apt-get install texlive-full texlive
 script:
   - pdflatex -synctex=1 -interaction=nonstopmode tfg.tex
   - bibtex tfg.aux
