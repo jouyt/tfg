@@ -2,19 +2,21 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8x]{inputenc} % Esto hace que latex interprete la codificación del documento como utf-8 sin dar errores en las tildes
 \usepackage[spanish]{babel} % Para poner el idioma en castellano(fecha,Índice...)
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{uarial}
+%\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage{graphicx} %Para las imagenes
 \usepackage{caption} %Para los textos de las imágenes
 \usepackage{subcaption} % Para los textos de las imagenes tengan varios apartados
 %Estas dos líneas (esta y la de abajo)ponen interlineado 1,5 excepto en notas a pie de página e igual algo más (que no sé)
 \usepackage{setspace} % Paquete para interlineado.
 \onehalfspacing % Interlineado a 1'5
-%\usepackage{helvet}
-%\renewcommand{\familydefault}{\sfdefault}
-%\usepackage{uarial}
-%\renewcommand{\familydefault}{\sfdefault}
 \usepackage[nottoc,numbib]{tocbibind}
 
-\usepackage[top=2.5cm, left=4cm, bottom=2.5cm, right=3cm]{geometry} % Para los márgenes
+\usepackage[top=2.5cm, left=3.8cm, bottom=2.5cm, right=2.8cm]{geometry} % Para los márgenes
 
 \usepackage{color} % Para poder poner las letras en color si es necesario
 \usepackage[toc,page]{appendix} % Para poder poner los Anexos
